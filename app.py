@@ -1,8 +1,10 @@
-from flask import Flask, request, Response
-import dbhelpers
-import json
-import traceback
-import sys
+from flask import Flask
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return "Hello World!"
+
+if __name__ == "__main__":
+    app.run(debug=True)
