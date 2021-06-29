@@ -2,3 +2,31 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
+
+.content {
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    margin-left: -200px;
+}
+
+#top {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-rows: 0.3fr 2.5fr;
+    column-gap: 50px;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+th {
+    border-right: 1px solid black;
+}
+
+table {
+    border: 1px black solid;
+}
